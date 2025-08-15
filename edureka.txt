@@ -1,1 +1,2 @@
 learning git branching
+learning is fun
