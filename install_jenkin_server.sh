@@ -7,3 +7,4 @@ sudo yum upgrade
 sudo yum install jenkins -y
 sudo systemctl enable jenkins
 sudo systemctl start jenkins
+sudo mount -o remount,size=2G /tmp
