@@ -1,1 +1,5 @@
-c.txt
+Master_Node_Setup.sh
+Slave_Node_Setup.sh
+install_git_playbook.yml
+*.txt
+*.sh
