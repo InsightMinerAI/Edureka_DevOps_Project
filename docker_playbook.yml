@@ -1,0 +1,10 @@
+---
+- hosts: slave
+  become: true
+  become_user: root
+  vars:
+   docker_edition: "ce"
+   docker_service_state: "started"
+   docker_install_compose: true
+  roles:
+   - geerlingguy.docker

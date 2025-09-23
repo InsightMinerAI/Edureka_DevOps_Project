@@ -1,0 +1,25 @@
+---
+- hosts: your_target_host
+  become: yes
+  tasks:
+    - name: Install Git
+      apt:
+        name: git
+        state: present
+        update_cache: yes
+
+    - name: Create a directory to monitor
+      file:
+        path: /path/to/your/folder
+        state: directory
+
+    - name: Initialize a git repository
+      command: git init
+      args:
+        chdir: /path/to/your/folder
+
+    - name: Set up a cron job to check for changes
+      cron:
+        name: "Check for changes in the monitored folder"
+        minute: "*/5"  # Adjust the interval as needed
+        job: "cd /path/to/your/folder && git add . && git commit -m 'Automated commit' || true"
