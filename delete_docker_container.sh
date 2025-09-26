@@ -26,3 +26,4 @@ if [ -z "$(docker ps -a -q)" ] && [ -z "$(docker images -a -q)" ]; then
 else
     echo "Some containers or images still exist; system prune skipped."
 fi
+#
