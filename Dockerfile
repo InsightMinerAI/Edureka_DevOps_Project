@@ -11,8 +11,4 @@ ADD /tmp/my_repo/ /var/www/html
 EXPOSE 80
 
 # Command to run your PHP server
-<<<<<<< HEAD:dockerfile
 CMD ["php", "-S", "0.0.0.0:80"]
-=======
-CMD ["php", "-S", "0.0.0.0:8081"]
->>>>>>> 203dde4fce4dc26cab8982dd4d1130ad059f6551:Dockerfile
