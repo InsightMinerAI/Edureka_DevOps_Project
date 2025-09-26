@@ -12,3 +12,4 @@ EXPOSE 80
 
 # Command to run your PHP server
 CMD ["php", "-S", "0.0.0.0:80"]
+#
