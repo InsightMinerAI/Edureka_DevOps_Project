@@ -1,12 +1,12 @@
 # Use the base image
 FROM devopsedu/webapp
 
+RUN echo "$(pwd)"
+
 # Set the working directory in the container
 WORKDIR /var/www/html
 
-# Copy your PHP website files into the container
-ADD /tmp/my_repo/ /var/www/html
-
+ADD website /var/www/html
 # Expose the port the app runs on (adjust if necessary)
 EXPOSE 80
 
